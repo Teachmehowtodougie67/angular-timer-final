@@ -1,0 +1,10 @@
+<div class="container">
+    <app-clock-component class="clock" [fontSize]="50" [time]="timeS.time()"></app-clock-component>
+    <app-controls-component class="controls" (timeStepChanged)="changeTimeStep($event)"></app-controls-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer1" color="#ff00ff50" title="tempo fino a domani" [seconds]="timeS.secondsToMidnight()"></app-timer-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer2" title="tempo fino al weekend" [seconds]="timeS.secondsToWeekend()"></app-timer-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer3" title="tempo fino a fine mese" [seconds]="timeS.secondsToEndOfTheMonth()"></app-timer-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer4" title="tempo fino a fine anno" [seconds]="timeS.secondsToEndOfTheYear()"></app-timer-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer5" title="tempo fino ll'uscita di gta" [seconds]="timeS.secondsToGTARelease()"></app-timer-component>
+    <app-timer-component [timeStep]="timeStep()" class="timer6" title="tempo dalla nascita di andrea" [seconds]="timeS.secondsFromAndreasCreation()"></app-timer-component>
+</div>

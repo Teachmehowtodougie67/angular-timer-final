@@ -1,0 +1,8 @@
+<div>
+    <button (click)="timeStepChanged.emit(1)">secondi</button>
+    <button (click)="timeStepChanged.emit(60)">minuti</button>
+    <button (click)="timeStepChanged.emit(60 * 60)">ore</button>
+    <button (click)="timeStepChanged.emit(24 * 60 * 60)">giorni</button>
+    <button (click)="timeStepChanged.emit(30 * 24 * 60 * 60)">mesi</button>
+    <button (click)="timeStepChanged.emit(365 * 24 * 60 * 60)">anni</button>
+</div>

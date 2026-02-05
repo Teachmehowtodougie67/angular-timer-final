@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    grid-template-areas: 
+    "clock clock"
+    "controls controls"
+    "timer1 timer2"
+    "timer3 timer4"
+    "timer5 timer6";
+}
+
+.clock{
+    grid-area: clock;
+}
+
+.controls{
+    grid-area: controls;
+}
+
+.timer1{
+    grid-area: timer1;
+}
+
+.timer2{
+    grid-area: timer2;
+}
+
+.timer3{
+    grid-area: timer3;
+}
+
+.timer4{
+    grid-area: timer4;
+}
+
+.timer5{
+    grid-area: timer5;
+}
+
+.timer6{
+    grid-area: timer6;
+}
