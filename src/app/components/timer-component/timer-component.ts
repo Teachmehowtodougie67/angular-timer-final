@@ -1,9 +1,11 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
+import { BadWordsPipe } from '../../pipes/bad-words-pipe';
+import { BadWordsLocalizedPipe } from '../../pipes/bad-words-localized-pipe';
 
 @Component({
   selector: 'app-timer-component',
-  imports: [UpperCasePipe],
+  imports: [UpperCasePipe, BadWordsPipe, BadWordsLocalizedPipe],
   templateUrl: './timer-component.html',
   styleUrl: './timer-component.scss',
 })
